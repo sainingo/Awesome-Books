@@ -1,30 +1,40 @@
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 h1 {
-    font-size: 40px;
-    margin: 20px 0 0;
+  font-size: 40px;
+  margin: 20px 0 0;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.books > h3,
+p {
+  margin-bottom: 0;
+}
+
+.books > p {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .books::after {
-    content: '';
-    width: 200px;
-    height: 1px;
-    background-color: darkgray;
-    display: block;
-    margin: 10px auto;
+  content: '';
+  width: 200px;
+  height: 1px;
+  background-color: darkgray;
+  display: block;
+  margin: 10px auto;
 }
 
 .input-fields {
-    padding: 10px 0;
+  padding: 10px 0;
 }
