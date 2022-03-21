@@ -3,7 +3,7 @@
 
 # Built With
 - Html
-- Css & sass
+- Css
 - Js
 - Git & Gitflow
 
