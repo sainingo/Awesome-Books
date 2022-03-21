@@ -11,18 +11,16 @@
     <body>
      <div class="container">
          <h1>Awesome Books</h1>
-         <div class="books">
-             <h4 class="title">Title here</h4>
-             <p class="author">Author Here</p>
-             <button class="remove-book">Remove Book</button>
-         </div>
-         <div class="input-fields">
-             <input type="text" placeholder="Title" />
-         </div>
-         <div class="input-fields">
-            <input type="text" placeholder="Author" />
+         <div class="display-books"></div>
+         <form>     
+            <div class="input-fields">
+                <input type="text" id="title" name="title" placeholder="Title" required/>
+            </div>
+            <div class="input-fields">
+            <input type="text" id="author" name="author" placeholder="Author" required/>
         </div>
-        <button class="add-book">Add Book</button>
+        <button type="submit" class="add-book">Add Book</button>
+         </form>
      </div>
         
         <script src="app.js"></script>

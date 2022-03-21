@@ -4,9 +4,27 @@ body {
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 40px;
+    margin: 20px 0 0;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.books::after {
+    content: '';
+    width: 200px;
+    height: 1px;
+    background-color: darkgray;
+    display: block;
+    margin: 10px auto;
+}
+
+.input-fields {
+    padding: 10px 0;
 }
