@@ -30,21 +30,6 @@ class Books {
 
 // create an object
 const listBooks = new Books();
-
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const formData = new FormData(form);
-  const title = formData.get('title');
-  const author = formData.get('author');
-  const bookObj = {
-    title,
-    author,
-  };
-  listBooks.addBook(bookObj);
-  onPageReload();
-  form.reset();
-});
-
 function onPageReload() {
   displayBook.innerHTML = listBooks.books.map((book, index) => `
   <div class="display">
@@ -60,9 +45,24 @@ function onPageReload() {
   }
 }
 
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const formData = new FormData(form);
+  const title = formData.get('title');
+  const author = formData.get('author');
+  const bookObj = {
+    title,
+    author,
+  };
+  listBooks.addBook(bookObj);
+  onPageReload();
+  form.reset();
+});
+
+/* eslint-disable no-unused-vars */
 const removeBook = (bookId) => {
   listBooks.removeBook(bookId);
   onPageReload();
 };
-
+/* eslint-disable no-unused-vars */
 onPageReload();
