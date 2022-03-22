@@ -21,10 +21,11 @@ p {
   margin-bottom: 0;
 }
 
+/*
 .books > p {
   margin-top: 0;
   padding-top: 0;
-}
+} */
 
 .books::after {
   content: '';
@@ -37,4 +38,22 @@ p {
 
 .input-fields {
   padding: 10px 0;
+}
+
+.display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.display-books {
+  width: 60%;
+  padding: 0 5px;
+}
+
+.remove-btn {
+  border: 2px solid black;
+  background-color: #fff;
+  padding: 0.2rem 0.3rem;
+  margin: 4px 2px;
 }
