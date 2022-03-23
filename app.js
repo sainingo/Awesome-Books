@@ -41,7 +41,7 @@ function onPageReload() {
   if (listBooks.books.length === 0) {
     displayBook.style.cssText = 'border: none;';
   } else {
-    displayBook.style.cssText = 'border: 2px solid black;';
+    displayBook.style.cssText = 'border: 3px solid black;';
   }
 }
 
@@ -66,3 +66,18 @@ const removeBook = (bookId) => {
 };
 /* eslint-disable no-unused-vars */
 onPageReload();
+
+document.querySelector('span').innerHTML = new Date();
+const section = document.querySelectorAll('.section');
+const addNew = document.querySelector('.list-books');
+
+function makeActive(className) {
+  section.forEach((item) => {
+    if (item.classList.contains(className)) {
+      item.classList.add('show');
+      addNew.classList.toggle('show');
+    } else {
+      item.classList.remove('show');
+    }
+  });
+}
