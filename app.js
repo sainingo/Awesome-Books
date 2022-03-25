@@ -68,6 +68,7 @@ const removeBook = (bookId) => {
 onPageReload();
 
 document.querySelector('span').innerHTML = new Date();
+
 const section = document.querySelectorAll('.section');
 const addNew = document.querySelector('.list-books');
 
